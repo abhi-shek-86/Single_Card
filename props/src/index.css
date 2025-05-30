@@ -1,0 +1,161 @@
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    /* height: 60px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+
+    /* padding: 0px; */
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#navbar>h3 {
+    color: orangered;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#nav-buttons {
+    display: flex;
+    cursor: pointer;
+    gap: 40px;
+    gap: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* .nav-link:hover {
+    color: rgb(235, 72, 12);
+} */
+
+
+.nav-link:hover {
+    color: rgb(235, 72, 12);
+}
+
+
+
+
+
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    place-items: center;
+
+
+}
+
+#card {
+    background-color: #ffffff;
+    /* pure white */
+    width: 300px;
+    height: 430px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    /* smoother rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* soft, elevated shadow */
+    padding: 20px;
+    /* add inner spacing */
+    transition: box-shadow 0.3s ease;
+}
+
+
+#card>p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+
+#card>img {
+    width: 90%;
+    height: 150px;
+}
+
+
+#card>span {
+    font-size: 14px;
+    background-color: orangered;
+    padding: 5px 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 475px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height: auto; */
+        padding: 10px 0;
+
+        background-color: rgb(250, 246, 246);
+        width: 300px;
+        height: 480px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 4px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #card>img {
+        width: 90%;
+    }
+
+
+    @media (max-width: 475px) {
+        #navbar {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            padding: 10px 0;
+
+        }
+
+        #navbar>h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .nav-link:hover {
+            color: rgb(235, 72, 12);
+        }
+
+        #nav-buttons {
+
+            gap: 30px;
+            gap: 10px;
+            align-items: center;
+        }
+    }}
