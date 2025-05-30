@@ -68,17 +68,16 @@ button {
     width: 300px;
     height: 430px;
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 12px;
-    /* smoother rounded corners */
+    
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    /* soft, elevated shadow */
+   
     padding: 20px;
-    /* add inner spacing */
-    transition: box-shadow 0.3s ease;
+   
 }
 
 
@@ -88,8 +87,8 @@ button {
 }
 
 
-#card>img {
-    width: 90%;
+#card > img {
+    width: 80%;
     height: 150px;
 }
 
