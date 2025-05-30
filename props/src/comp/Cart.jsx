@@ -2,7 +2,7 @@ import React from 'react'
 
 const FavItems = () => {
   return (
-    <div >FavItems is Under Working Broh ⏳</div>
+    <div >Cart is Under Working Broh ⏳</div>
   )
 }
 
